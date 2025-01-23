@@ -2,6 +2,9 @@
 
 ---
 
+#### AWS 네트워킹 및 콘텐츠 전송 서비스
+* VPC, CloudFront 등등... 과 같은 서비스다.
+
 ![](image/2025-01-23-00-42-09.png)
 <img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa5d572a6-c679-43d9-affa-54cc711a4b75_2250x2504.png">
 
@@ -34,8 +37,22 @@
 1. API Key
 2. Lambda Authorizer
 
+```
+client send request to API Gateway RESTAPI
+invoke lambda function that query dynamoDB 
+http response back to client
+```
+
+> ### 📄 2. Chalice와 연동
+* 배포시 AWS Lambda 와 같이 아래와 같은 형태로 Gateway API가 형성된 것을 확인할 수 있다.
+   |배포 전| 배포 후|
+   |---|---|
+   |![](image/2025-01-25-01-23-28.png)|![](image/2025-01-25-01-24-11.png)|
+
+* 리소스의 라우트 경로마다 HTTP Method(GET, POST, PUT, DELETE)가 연결 된 것을 확인할 수 있다.
+![](image/2025-01-25-01-24-25.png)
 
 > ### 참조
-[ Amazon API Gateway Doc](https://docs.aws.amazon.com/ko_kr/apigateway/latest/developerguide/welcome.html)
-[API Gateway](https://blog.bytebytego.com/p/api-gateway)
-[What is API Gateway? youtube](https://www.youtube.com/watch?v=6ULyxuHKxg8&t=12s)
+* [ Amazon API Gateway Doc](https://docs.aws.amazon.com/ko_kr/apigateway/latest/developerguide/welcome.html)
+* [API Gateway](https://blog.bytebytego.com/p/api-gateway)
+* [What is API Gateway? youtube](https://www.youtube.com/watch?v=6ULyxuHKxg8&t=12s)

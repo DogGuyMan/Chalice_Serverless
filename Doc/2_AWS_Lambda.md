@@ -2,6 +2,9 @@
 
 ---
 
+#### AWS 컴퓨팅 서비스
+* EC2, Lightsail, Elastic Beanstalk 등등..과 같은 서비스다.
+
 ![](image/2025-01-23-03-33-31.png)
 
 ---
@@ -58,11 +61,11 @@
 
 
 #### 1). Lambda Management Console
-1. AWS Enviroment 만 설정 한다면 Function 코드를 직접 웹에서 수정할 수 있다.
+1. AWS Environment 만 설정 한다면 Function 코드를 직접 웹에서 수정할 수 있다.
 
 
 ---
 
 ### 참고
 
-[서버리스 이해하기](https://thebook.io/080334/0548/)
+* [서버리스 이해하기](https://thebook.io/080334/0548/)

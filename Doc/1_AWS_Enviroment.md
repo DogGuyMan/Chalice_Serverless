@@ -1,4 +1,4 @@
-## 🍷 1 AWS Enviroment
+## 🍷 1 AWS Environment
 
 ---
 
@@ -15,7 +15,7 @@
 4. Download Access Key ID and Secrete Key ID
     ![](image/2025-01-24-00-21-51.png)
 
-*Enviroment Variable 또는 Tag?*
+*Environment Variable 또는 Tag?*
 
 ---
 
@@ -45,7 +45,7 @@
 ---
 
 > ### 📄 3. 디자이너
-![](image/2025-01-23-00-50-27.png)
+![](image/2025-01-25-01-33-23.png)
 
 트리거나 리소스를 바인딩하여 서비스를 디자인 할 수 있다.
 
@@ -58,8 +58,6 @@
 
 ### 참고
 
-[AWS CLI](https://aws.amazon.com/ko/cli/)
-
-[파이썬 Chalice를 이용한 서버리스 이미지 호스팅 제작기](https://hidekuma.github.io/python/chalice/serverless/python-chalice/)
-
-[AWS 개발환경](https://www.youtube.com/watch?v=alFztoL4ojE&list=PLv30Wx8ctrjPN3_LpAqATkuh9F79QW1qJ&index=2)
+* [AWS CLI](https://aws.amazon.com/ko/cli/)
+* [파이썬 Chalice를 이용한 서버리스 이미지 호스팅 제작기](https://hidekuma.github.io/python/chalice/serverless/python-chalice/)
+* [AWS 개발환경](https://www.youtube.com/watch?v=alFztoL4ojE&list=PLv30Wx8ctrjPN3_LpAqATkuh9F79QW1qJ&index=2)

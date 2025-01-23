@@ -2,7 +2,7 @@
 
 ---
 
-#### 스펙
+### 스펙
 
 언어 : python 
 프레임 워크 : `Chalice` 
@@ -10,16 +10,16 @@
 
 ---
 
-#### 학습 내용 
+### 학습 내용 
 
 마이크로 서비스, REST API, 서버리스 아키텍쳐를 AWS 환경에서 개발 가능하다.
 또한 AWS 람다에 대한 이해가 높아질 것이다.
 
-#### 로드맵
+#### 1). 로드맵
 
-1. **AWS Enviroment Setting**
-    * AWS Enviroment
-    * Enviroment Variable
+1. **AWS Environment Setting**
+    * AWS Environment
+    * Environment Variable
     * Tag
 2. **Lambda**
    * lambda function using console
@@ -38,5 +38,17 @@
    * 이걸 활용해서 Addressable와 같이 사용하여
      * AddressableAssetSettings와 Remode URL(S3, 구글 클라우드 플랫폼) 를 사용할 수 있다.
 6. **CRUD Postgresql 또는 DynamoDB 연동**
+
+#### 2). 노트
+
+1. [Python Environment](./Doc/0_Python_Environment.md)
+2. [용어정리](./Doc/0_용어정리.md)
+3. [AWS Environment](./Doc/1_AWS_Environment.md)
+4. [AWS Lambda](./Doc/2_AWS_Lambda.md)
+5. [Python Chalice](./Doc/3_Python_Chalice.md)
+6. [AWS Gateway](./Doc/4_AWS_Gateway.md)
+7. [AWS Secure](./Doc/5_AWS_Secure.md)
+8. [AWS Rejognition](./Doc/6_AWS_Rejognition.md)
+9. [AWS DynamoDB](./Doc/7_AWS_DynamoDB.md)
 
 ---

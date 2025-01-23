@@ -1,6 +1,12 @@
+## 🍷 0 파이썬 .vend 세팅
+
+---
+ 
 ### 파이썬 인터프리터 선택
 ![](image/2025-01-24-01-10-54.png)
 
+---
+ 
 ### Pylance 확장 설정
 ![](image/2025-01-24-01-12-51.png)
 
@@ -9,6 +15,8 @@
 "python.languageServer": "Pylance"
 ```
 
+---
+ 
 ### 의존성 관리를 위한 .venv 설정
 
 `cd Projects/PythonProject/PythonServerless/Project/hello-world`
@@ -67,9 +75,12 @@ deactivate
 pip freeze > requirements.txt
 ```
 
+---
+ 
 ### 모듈 에러 해결
 
 > is not exported from module python
+    ![](image/2025-01-24-02-03-18.png)
 
 [pylance : reportPrivateImportUsage](https://github.com/microsoft/pylance-release/issues/2953)
 
@@ -80,5 +91,3 @@ pip freeze > requirements.txt
     "reportPrivateImportUsage": "none"
 }
 ```
-
-![](image/2025-01-24-02-03-18.png)

@@ -32,7 +32,26 @@ curl localhost:8100
 #### 4). 서버 배포
 REST API URL : 생성하기
 ```bash
-chalice deploy
+chalice deploy # 코드 바뀔때 마다 수행해야한다.
+> 
+Creating deployment package.
+Creating IAM role: workshop-intro-dev
+Creating lambda function: workshop-intro-dev
+Creating Rest API
+Resources deployed:
+  - Lambda ARN: arn:aws:lambda:...  
+  - Rest API URL: https://...
+
+curl https://ojl2xoqdkf.execute-api.ap-northeast-2.amazonaws.com/api/
+> {"hello":"world"}%    
+```
+
+#### 5). 로깅과 디버깅
+```bash
+chalice logs --num-entries 2
+> 
+2025-01-23 18:31:03.298000 4b3bbd INIT_START Runtime Version: python:3.12.v38   Runtime Version ARN: arn:aws:...
+2025-01-23 18:34:42.945000 3a9284 INIT_START Runtime Version: python:3.12.v38   Runtime Version ARN: arn:aws:...
 ```
 
 #### 5). 챌리스 삭제

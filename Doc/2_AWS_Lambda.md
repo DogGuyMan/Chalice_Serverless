@@ -20,22 +20,6 @@ VM 인스턴스를 미리 구매하지 않아도 됩니다.
 1. AWS Lambda : 서버리스 컴퓨팅
 2. API GateWay
 3. S3 : 스토리지 (클라우드 데이터 저장소)
-   * 클라우드 데이터 저장소가 대신 정적 파일(리소스, 이미지)을 제공하도록 위임
-   * 이름은 "버킷"을 사용
-   * 이걸 활용해서 Addressable와 같이 사용하여
-     * AddressableAssetSettings와 Remode URL(S3, 구글 클라우 플랫폼) 를 사용할 수 있다.
-
-
-* 예시
-    1. S3 트리거 이벤트를 람다로 정의
-        ```
-        Events with the Simple Storage Service
-
-        S3에서 람다에 트리거 실행
-        람다는 이미지 처리
-        처리된 이미지를 다시 S3에 저장
-        ```
-    2. AWS Lambda & DynamoDB 연동
 
 ---
 
@@ -50,8 +34,6 @@ VM 인스턴스를 미리 구매하지 않아도 됩니다.
 
 #### 1). Lambda Management Console
 1. AWS Enviroment 만 설정 한다면 Function 코드를 직접 웹에서 수정할 수 있다.
-
----
 
 
 ---

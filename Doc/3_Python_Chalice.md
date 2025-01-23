@@ -44,3 +44,6 @@ chalice delete
 [AWS Chalice Examples](https://github.com/daekeun-ml/aws-chalice-examples/tree/main)
 [Chalice Doc](https://aws.github.io/chalice/)
 [Chalice Quickstart](https://aws.github.io/chalice/quickstart.html)
+[Introduction to AWS Chalice](https://chalice-workshop.readthedocs.io/en/latest/todo-app/part1/00-intro-chalice.html)
+[파이선(Python) 개발자를 위한 AWS 활용 - Youtube ](https://www.youtube.com/watch?v=0rkRvEr9RMk)
+[파이선(Python) 개발자를 위한 AWS 활용 - slideshare](https://www.slideshare.net/awskorea/recap2016-1pythononaws)

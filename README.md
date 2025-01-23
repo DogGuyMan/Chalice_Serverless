@@ -33,6 +33,10 @@
       * Accessing Request Data/Request Content Type
       * Accessing POST Data/POST Object
 5. **S3, SQS 리소스에 접근하기**
-6. **CRUD Postgresql 서비스**
+   * 클라우드 데이터 저장소가 대신 정적 파일(리소스, 이미지)을 제공하도록 위임
+   * 이름은 "버킷"을 사용
+   * 이걸 활용해서 Addressable와 같이 사용하여
+     * AddressableAssetSettings와 Remode URL(S3, 구글 클라우 플랫폼) 를 사용할 수 있다.
+6. **CRUD Postgresql 또는 DynamoDB 연동**
 
 ---

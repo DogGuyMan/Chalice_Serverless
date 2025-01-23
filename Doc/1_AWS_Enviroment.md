@@ -8,10 +8,12 @@
 2. IAM(Identity and Access Management) User 생성
    * 생성시 직업 정책 연결 
    * AdministratorAceess 선택
-3. Credentials 등록
-   * IAM 사용자의 보안 자격 증명 클릭
+3. IAM 사용자의 Security Credentials 클릭
+   ![](image/2025-01-24-00-20-21.png)
    * 엑세스키 (CLI)
+    ![](image/2025-01-24-00-21-13.png)
 4. Download Access Key ID and Secrete Key ID
+    ![](image/2025-01-24-00-21-51.png)
 
 *Enviroment Variable 또는 Tag?*
 
@@ -22,7 +24,7 @@
 1. 사이트 가서 지침 따라서 다운하기
 2. `aws configure`
     ```bash
-    cat >> ~/.aws/config
+    code ~/.aws/config
     [default]
     aws_access_key_id=YOUR_ACCESS_KEY_HERE
     aws_secret_access_key=YOUR_SECRET_ACCESS_KEY
@@ -32,6 +34,12 @@
 4. 유저와 엑세스 키 확인
    ```bash
    aws sts get-caller-identity
+   > 
+    {
+        "UserId": ...,
+        "Account": ...,
+        "Arn": ...
+    }
    ```
 
 ---
@@ -49,6 +57,9 @@
 ---
 
 ### 참고
+
+[AWS CLI](https://aws.amazon.com/ko/cli/)
+
 [파이썬 Chalice를 이용한 서버리스 이미지 호스팅 제작기](https://hidekuma.github.io/python/chalice/serverless/python-chalice/)
 
 [AWS 개발환경](https://www.youtube.com/watch?v=alFztoL4ojE&list=PLv30Wx8ctrjPN3_LpAqATkuh9F79QW1qJ&index=2)

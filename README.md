@@ -4,9 +4,10 @@
 
 ### 스펙
 
-언어 : python 
-프레임 워크 : `Chalice` 
-인프라 : AWS Serverless Lambda & Amazon API Gateway
+1. 언어 : python 
+2. 프레임 워크 : `Chalice` 
+3. 인프라 : AWS 
+   * Serverless Lambda & Amazon API Gateway
 
 ---
 

@@ -1,64 +1,3 @@
----
-ebook:
-  theme: one-dark.css
-  title: 객체지향
-  authors: Escatrgot
-  disable-font-rescaling: true
-  margin: [0.1, 0.1, 0.1, 0.1]
----
-<style>
-        h2:not(.tit) { border-top: 12px solid #00A9FF; border-left: 5px solid #00A9FF; border-right: 5px solid #00A9FF; background-color: #00A9FF; color: #FFF !important; font-weight: bold;}
-
-    h3:not(.tit) { border-top: 3px solid #FFF; border: 2px solid #FFF; background-color: #FFF; color: #00A9FF !important;}
-
-
-    h4:not(.tit) { font-weight: bold; color: #FFF !important; }
-
-    summary { cursor:pointer; font-weight:bold; color : #0F0 !important;}
-
-    .red{color: #d93d3d;}
-    .darkred{color: #470909;}
-    .orange{color: #cf6d1d;}
-    .yellow{color: #DD3;}
-    .green{color: #25ba00;}
-    .blue{color: #169ae0;}
-    .pink{color: #d10fd1;}
-    .dim{color : #666666;}
-    .lime{color : #addb40;}
-    
-    .container {
-        display : flex; 
-        flex-direction:row;
-        align-items:center;
-    }
-    .item {
-        margin-right:2%;
-    }
-
-    @media screen and (min-width:1001px){
-        .container {
-            width: 90%;
-            flex-wrap : nowrap;
-            justify-content:center;
-        }
-    }
-    
-    @media screen and (max-width:1000px){
-        .container {
-            width: 98%;
-            flex-wrap : nowrap;
-            justify-content:center;
-        }
-    }
-    
-    @media screen and (max-width:799px){
-        .container {
-            justify-content:left;
-            flex-wrap : wrap;
-        }
-    }
-
-</style>
 
 ## 🌐 네트워크 API
 
@@ -72,12 +11,12 @@ ebook:
 
 ---
  
-### 📄 1. REST(REpresentational State Transfer) API
+> ### 📄 1. REST(REpresentational State Transfer) API
 
 ##### ① HTTP 프로토콜을 통해 "자원을 URL로 해석하고", "HTTP 메서드로 자원의 행위를 결정한다."
 * **자원** : 사용자 정보, 게시물, 댓글 등이 자원이 될 수 있습니다.
 * **HTTP 메서드** : (GET, POST, PUT, DELETE 등)
-  * HTTP 메서드 Idempotence : 한번 실행한거랑 두번이상 실행한거랑 결과가 같다고
+  * **HTTP 메서드 Idempotence 멱등성** : 한번 실행한거랑 두번이상 실행한거랑 결과가 같다고
     1. POST는 상태가 변할 수 있으므로 Idempotence하지 않고,
     2. PUT, GET, DELETE는 한번 호출하나 여러번 호출하나 결과가 같으므로 Idempotence하다
 
@@ -101,7 +40,7 @@ ebook:
 
 ---
  
-### 📄 2. RPC (Remote Procedure Call) API
+> ### 📄 2. RPC (Remote Procedure Call) API
 
 ##### ① HTTP프로토콜을 사용하며 클라이언트가 서버의(혹은 그 반대로) "프로시저 & 함수" 를 <br> 마치 본인의 컴퓨팅 자원인것 처럼 호출할때 사용하는 통신 기술
 * **프로시저, 함수** : 종단점 함수에 대해 원격 함수를 호출하게 된다. 로컬 함수와 같이 패러미터를 전송한다.
@@ -167,7 +106,7 @@ ebook:
 
 ---
 
-### 📄 3. Socket API
+> ### 📄 3. Socket API
 
 <div align=center>
   <img src="./image/2025-02-02-14-06-39.png">
@@ -182,7 +121,7 @@ ebook:
 
 ---
 
-### 📄 4. [REST vs RPC](https://aws.amazon.com/ko/compare/the-difference-between-rpc-and-rest/)
+> ### 📄 4. [REST vs RPC](https://aws.amazon.com/ko/compare/the-difference-between-rpc-and-rest/)
 
 ##### ① REST : 자원 조작의 목표, RPC : 무엇을 수행할까 목표 
 
@@ -195,19 +134,19 @@ ebook:
   |  제품 삭제  |  POST /deleteProduct HTTP/1.1 HOST: api.example.com Content-Type: application/json {"productId": "123""}  |  DELETE /products/123 HTTP/1.1 HOST: api.example.com  |  RPC는 함수에 POST를 사용하고 JSON 객체로 파라미터를 전달합니다. REST는 URL에 DELETE를 사용하고 URL로 파라미터를 전달합니다.  |
 
 ##### ② **다음 답변이 가능해야 한다.**
-```
-플레이어가 재화를 획득하는 로직을 서버에 두지 않고 클라이언트에 두면 어떤 장점과 단점이 있나요?"
 
-"클라이언트가 요청을 보내지 않고도 서버에서 일방적으로 메시지를 클라이언트에게 보내는 경우가 있다면,
-클라이언트에서 이 메시지를 받기 위해 어떻게 구현해야 할까요?"
-
-"RPC 요청을 보냈는데 응답을 받는 과정에서 연결이 끊겨 서버가 이를 처리했는지 클라이언트가 알 수 없는 경우가 있습니다. 
+1. "RPC 요청을 보냈는데 응답을 받는 과정에서 연결이 끊겨 서버가 이를 처리했는지 클라이언트가 알 수 없는 경우가 있습니다. 
 이러한 상황에서 요청이 서버에서 단 한 번만 처리됨을 보장하려면 어떻게 해야 하나요?"
+   * **Idempotency (멱등성) 보장** :
+   요청에 고유한 식별자(예: UUID, 타임스탬프 등)를 부여하여, 
+   서버가 동일한 요청이 여러 번 들어왔을 때 단 한 번만 처리하도록 설계합니다.
+   멱등한 작업이라면, 같은 요청을 반복 실행해도 결과가 동일하므로 중복 실행 문제를 완화할 수 있습니다.
+   * **트랜잭션 및 커밋 로그 사용** :
+    서버 측에서 요청을 처리할 때 트랜잭션 단위로 수행하고, 
+    성공적으로 처리되었는지 로그나 데이터베이스 커밋 기록을 남깁니다.
+    클라이언트는 재요청 시 이러한 로그를 확인하여 이미 처리된 요청인지 판단할 수 있습니다.
 
-"실시간 온라인 게임에서는 서버에 요청을 보내고 응답을 받을 때까지의 지연 시간이 짧을수록 좋습니다. 
-클라이언트에서 반응성을 높이기 위한 방법을 제안해 보세요."
+2. 플레이어가 재화를 획득하는 로직을 서버에 두지 않고 클라이언트에 두면 어떤 장점과 단점이 있나요?"
 
-RPC가 무엇의 약자인지, 어떤 상황에서 필요한지 등을 공부하면 좋습니다.
-
-RPC와 REST의 차이
-```
+3. "클라이언트가 요청을 보내지 않고도 서버에서 일방적으로 메시지를 클라이언트에게 보내는 경우가 있다면,
+클라이언트에서 이 메시지를 받기 위해 어떻게 구현해야 할까요?"

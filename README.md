@@ -42,15 +42,18 @@
 
 #### 2). 노트
 
-1. [Python Environment](./Doc/0_Python_Enviroment.md)
-2. [용어정리](./Doc/0_용어정리.md)
-3. [AWS Environment](./Doc/1_AWS_Enviroment.md)
-4. [AWS Lambda](./Doc/2_AWS_Lambda.md)
-5. [Python Chalice](./Doc/3_Python_Chalice.md)
-6. [AWS Gateway](./Doc/4_AWS_Gateway.md)
-7. [AWS Secure](./Doc/5_AWS_Secure.md)
-8. [AWS Rejognition](./Doc/6_AWS_Rejognition.md)
-9. [AWS Boto3](./Doc/7_Python_Boto3.md)
-10. [AWS DynamoDB](./Doc/8_AWS_DynamoDB.md.md)
+1. [네트워크 모델](./Doc/0_네트워크_모델.md)
+2. [네트워크 토폴로지](./Doc/0_네트워크_토폴로지.md)
+3. [네트워크 API](./Doc/0_네트워크_API.md)
+4. [용어정리](./Doc/0_용어정리.md)
+5. [Python Environment](./Doc/0_Python_Environment.md)
+6. [AWS Environment](./Doc/1_AWS_Environment.md)
+7. [AWS Lambda](./Doc/2_AWS_Lambda.md)
+8. [Python Chalice](./Doc/3_Python_Chalice.md)
+9. [AWS Gateway](./Doc/4_AWS_Gateway.md)
+10. [AWS Secure](./Doc/5_AWS_Secure.md)
+11. [AWS Rejognition](./Doc/6_AWS_Rejognition.md)
+12. [AWS Boto3](./Doc/7_Python_Boto3.md)
+13. [AWS DynamoDB](./Doc/8_AWS_DynamoDB.md.md)
 
 ---
